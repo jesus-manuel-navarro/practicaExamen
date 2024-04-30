@@ -22,6 +22,7 @@ struct ContentView:View{
             List {
                 
                 ForEach (animales) { elemento in
+                    
                          MostrarEnListView ( arg: elemento )
                         
                         }
