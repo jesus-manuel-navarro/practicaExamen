@@ -19,5 +19,8 @@ import SwiftUI
         
     }
 
-
-
+let  animales = [ Animales(name : "ardillas", image : "ardilla"),
+       
+               Animales(name : "halcones", image : "halcon"),
+       
+               Animales(name : "osos",  image : "oso")]

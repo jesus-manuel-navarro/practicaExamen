@@ -9,11 +9,7 @@ import SwiftUI
 
 struct ContentView:View{
     
-  var  animales = [ Animales(name : "ardillas", image : "ardilla"),
-         
-                 Animales(name : "halcones", image : "halcon"),
-         
-                 Animales(name : "osos",  image : "oso")]
+  
     
     var body: some View {
        
@@ -22,11 +18,16 @@ struct ContentView:View{
             List {
                 
                 ForEach (animales) { elemento in
-                    
+                    NavigationLink(destination: AnimalDetalleView(arg: elemento)){
+                        
                          MostrarEnListView ( arg: elemento )
                         
                         }
-            }}
+            }
+            }
+            
+        }.navigationBarTitle("animales" , displayMode: .inline)
+        
     }
 }
 
