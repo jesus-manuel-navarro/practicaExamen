@@ -14,7 +14,7 @@ struct AnimalDetalleView: View {
     var body: some View {
         VStack{
             Text(arg.name)
-            padding()
+                .padding()
             Image(arg.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
